@@ -95,6 +95,7 @@ int main()
     System_printf("Starting the example\nSystem provider is set to SysMin. "
                       "Halt the target to view any SysMin contents in ROV.\n");
      /* SysMin will only print to the console when you call flush or exit */
+
      System_flush();
 
      /* Start BIOS */
