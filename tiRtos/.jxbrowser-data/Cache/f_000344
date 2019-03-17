@@ -1,0 +1,452 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=GxnDwWTPo41Hq4&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "GxnDwWTPo41Hq4",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/GxnDwWTPo41Hq4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.json",
+    "linkType": "local",
+    "name": "overview.rov.json",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=Gxnk1T2R3P28pI&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "Gxnk1T2R3P28pI",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/Gxnk1T2R3P28pI?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.c",
+    "linkType": "local",
+    "name": "main_tirtos.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "main_tirtos.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=GxnecH6X06a4DY&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "GxnecH6X06a4DY",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/GxnecH6X06a4DY?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.md",
+    "linkType": "local",
+    "name": "README.md",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=Gxn75gsXe1Kz5c&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "Gxn75gsXe1Kz5c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/Gxn75gsXe1Kz5c?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.c",
+    "linkType": "local",
+    "name": "pwmled2.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "pwmled2.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=GxnTdUJ7TorHzg&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "GxnTdUJ7TorHzg",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/GxnTdUJ7TorHzg?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.html",
+    "linkType": "local",
+    "name": "README.html",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=GxnREE4ZqRHl3M&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "GxnREE4ZqRHl3M",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/GxnREE4ZqRHl3M?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.h",
+    "linkType": "local",
+    "name": "Board.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=Gxnjr2LjNrNwv8&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "Gxnjr2LjNrNwv8",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/Gxnjr2LjNrNwv8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.c",
+    "linkType": "local",
+    "name": "MSP_EXP432P4111.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "MSP_EXP432P4111.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=GxnP4TBDAbouOA&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "GxnP4TBDAbouOA",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/GxnP4TBDAbouOA?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.h",
+    "linkType": "local",
+    "name": "MSP_EXP432P4111.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "MSP_EXP432P4111.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=Gxn79utFwb_t1A&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "Gxn79utFwb_t1A",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/Gxn79utFwb_t1A?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.cmd",
+    "linkType": "local",
+    "name": "MSP_EXP432P4111_TIRTOS.cmd",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "MSP_EXP432P4111_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "removeofflineLink": "api/resources?id=Gxn98RI8DpoLzI&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P4111 LaunchPad/TI Drivers/pwmled2/TI-RTOS/CCS Compiler/pwmled2&removeoffline=true",
+    "_id": "Gxn98RI8DpoLzI",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "allowPartialDownload": false,
+    "compiler": [
+      "ccs"
+    ],
+    "coreTypes": [
+      "MSP432P4111"
+    ],
+    "dependencies": [],
+    "devtools": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "devtools_category": [
+      "MSP432P4111 LaunchPad"
+    ],
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_40_00_10/.metadata/.tirex/.dependencies/pwmled2_MSP_EXP432P4111_tirtos_ccs_0.dependency.tirex.json",
+    "isIncludedFile": true,
+    "kernel": [
+      "tirtos"
+    ],
+    "link": "api/linkTo/Gxn98RI8DpoLzI?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P4111%20LaunchPad%2FTI%20Drivers%2Fpwmled2%2FTI-RTOS%2FCCS%20Compiler%2Fpwmled2&extname=.html",
+    "linkType": "local",
+    "name": "Board.html",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packagePath": "simplelink_msp432p4_sdk_2_40_00_10",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10",
+    "packageVersion": "2.40.00.10",
+    "parentID": "GxnCFQsGj1oq2Y",
+    "resourceType": "file",
+    "semver": "0.0.0",
+    "version": "UNVERSIONED",
+    "type": "resource",
+    "text": "Board.html",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P4111%20LaunchPad/TI%20Drivers/pwmled2/TI-RTOS/CCS%20Compiler/pwmled2&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_26X2_SDK__2.40.00.81::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC32XX_SDK__2.40.02.00::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.40.00.22::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::com.ti.AWS_CC32XX__2.20.00.02::com.ti.AWS_MSP432E4__2.20.00.02::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.20.00.04::com.ti.WATSON_CC32XX__1.20.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.20.00.05::com.ti.AZURE_MSP432E4__2.20.00.05::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.03.00.00::powerSUITE_software_package__2.04.00.00::msp430ware__3.80.07.00::com.ti.mmwave_industrial_toolbox__3.3.0::com.ti.mmwave_automotive_toolbox__2.4.7::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18::com.ti.SIMPLELINK_CC2652RB_BLE_SDK__3.10.00.15",
+    "packageOrder": 54,
+    "offline": "true"
+  }
+]

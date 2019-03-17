@@ -51,10 +51,12 @@
 //C:\ti\tirtos_simplelink_2_13_01_09\packages\ti\drivers
 #include <ti/drivers/GPIO.h>
 #include <ti/drivers/ADC.h>
+#include <ti/drivers/PWM.h>
 // #include <ti/drivers/I2C.h>
 // #include <ti/drivers/SDSPI.h>
 // #include <ti/drivers/SPI.h>
  #include <ti/drivers/UART.h>
+ #include <ti/drivers/gpio/GPIOMSP432.h>
 // #include <ti/drivers/Watchdog.h>
 // #include <ti/drivers/WiFi.h>
 
@@ -67,11 +69,124 @@
 
 
 UART_Handle uart;
+UART_Handle gpredictUart;
 
 Semaphore_Handle SEM_uart_rx; // this binary semaphore handles uart receiving interrupts
+Semaphore_Handle SEM_gpredict_uart_rx;
 
 void UART00_IRQHandler(UART_Handle handle, void *buffer, size_t num);
+void UART01_IRQHandler(UART_Handle handle, void *buffer, size_t num);
 
+
+Void steperDriver(UArg arg0, UArg arg1)
+{
+    /* Period and duty in microseconds */
+    uint16_t   pwmPeriod = 540;
+    uint16_t   duty = pwmPeriod/2;
+
+
+    /* Sleep time in microseconds */
+
+    PWM_Handle pwm1 = NULL;
+    PWM_Handle pwm2 = NULL;
+    PWM_Params params;
+
+    /* Call driver init functions. */
+
+    //GPIO_init();
+//   GPIO_setConfig(Board_DIR1 , GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+//   GPIO_setConfig(Board_DIR2 , GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+//   GPIO_write(Board_DIR1,  0);
+//              GPIO_write(Board_DIR2,  0);
+
+
+    //MAP_GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0);
+    //MAP_GPIO_setOutputLOnPin(GPIO_PORT_P1, GPIO_PIN0)
+
+    PWM_Params_init(&params);
+
+    params.dutyUnits = PWM_DUTY_US;
+        params.dutyValue = duty;
+        params.periodUnits = PWM_PERIOD_US;
+        params.periodValue = pwmPeriod;
+        pwm1 = PWM_open(Board_PWM0, &params);
+        if (pwm1 == NULL) {
+            /* Board_PWM0 did not open */
+            while (1);
+        }
+
+        PWM_start(pwm1);
+
+        pwm2 = PWM_open(Board_PWM1, &params);
+        if (pwm2 == NULL) {
+            /* Board_PWM0 did not open */
+            while (1);
+        }
+
+        PWM_start(pwm2);
+
+    while(1)
+    {
+        GPIO_write(Board_GPIO_LED0,  1);
+        GPIO_write(Board_DIR2,  1);
+       //    GPIO_write(Board_DIR2,  0);
+        //GPIO_write(Board_GPIO_LED0,  1);
+//        PWM_setDuty(pwm1, duty);
+//
+//                PWM_setDuty(pwm2, duty);
+//
+//                duty = (duty + dutyInc);
+//
+//                if (duty == pwmPeriod || (!duty)) {
+//                    dutyInc = - dutyInc;
+//    }
+    }
+}
+
+
+Void gpredictComm(UArg arg0, UArg arg1)
+{
+    char gpredictInput;
+    UART_Params gpredictUartParams;
+    Error_Block  gpredictEb;
+    Semaphore_Params  gpredictSemParams;
+
+    /* Create a UART with data processing off. */
+    UART_Params_init(&gpredictUartParams);
+    gpredictUartParams.writeDataMode = UART_DATA_BINARY;
+    gpredictUartParams.readDataMode = UART_DATA_BINARY;
+    gpredictUartParams.readReturnMode = UART_RETURN_FULL;
+    gpredictUartParams.readEcho = UART_ECHO_OFF;
+    gpredictUartParams.baudRate = 9600;
+    gpredictUartParams.readMode = UART_MODE_CALLBACK; // the uart uses a read interrupt
+    gpredictUartParams.readCallback = &UART01_IRQHandler; // function called when the uart interrupt fires
+
+    gpredictUart = UART_open(Board_UART1, &gpredictUartParams);
+
+
+//    if (uart == NULL) {
+//        System_abort("Error opening the UART for Gpredict");
+//    }
+
+//    Semaphore_Params_init(&gpredictSemParams);
+//    gpredictSemParams.mode = Semaphore_Mode_BINARY;
+//
+//    SEM_gpredict_uart_rx = Semaphore_create(0, &gpredictSemParams, &gpredictEb);
+//    while (1) {
+//       // UART_read(gpredictUart, &gpredictInput, 1); // prime the uart bus to read the first character, non blocking
+//      //  Semaphore_pend(SEM_gpredict_uart_rx, BIOS_WAIT_FOREVER); // when a character is received via UART, the interrupt handler will release the binary semaphore
+//        // in my case: I get an interrupt for a single character, no need to loop.
+//        //GPIO_toggle(Board_GPIO_LED1); // LED B - visual clue that we've received a request over USB
+//      //  UART_write(uart, &gpredictInput, 1);  // as a test, let's just echo the char
+//        //GPIO_toggle(Board_GPIO_LED1); // LED B - visual clue off
+//    }
+
+
+}
+void UART01_IRQHandler(UART_Handle handle, void *buffer, size_t num)
+{
+    Semaphore_post(SEM_gpredict_uart_rx);
+}
 /*
  *  ======== fnTaskUART ========
  *  Task for this function is created statically. See the project's .cfg file.
@@ -109,8 +224,9 @@ Void fnTaskUART(UArg arg0, UArg arg1)
         Semaphore_pend(SEM_uart_rx, BIOS_WAIT_FOREVER); // when a character is received via UART, the interrupt handler will release the binary semaphore
         // in my case: I get an interrupt for a single character, no need to loop.
         GPIO_toggle(Board_GPIO_LED1); // LED B - visual clue that we've received a request over USB
-        UART_write(uart, &input, 1);  // as a test, let's just echo the char
+        UART_write(gpredictUart, &input, 1);  // as a test, let's just echo the char
         GPIO_toggle(Board_GPIO_LED1); // LED B - visual clue off
+
     }
 }
 
@@ -127,11 +243,18 @@ void UART00_IRQHandler(UART_Handle handle, void *buffer, size_t num)
 
 Void heartBeatFxn(UArg arg0, UArg arg1)
 {
-    while (1) {
-        Task_sleep((UInt)arg0);
-        GPIO_toggle(Board_GPIO_LED0);
-        //System_printf("LED here!!!");
 
+    //GPIO_setConfig(Board_GPIO_LED0 , GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+    //   GPIO_setConfig(Board_DIR2 , GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+
+
+                  //GPIO_write(Board_GPIO_LED0, Board_GPIO_LED_ON);
+    while (1) {
+//        Task_sleep((UInt)arg0);
+//        GPIO_toggle(Board_GPIO_LED0);
+//        //System_printf("LED here!!!");
+  //      GPIO_write(Board_GPIO_LED0,  0);
+        //                  GPIO_write(Board_DIR2,  1);
     }
 }
 
@@ -139,6 +262,11 @@ Board_initGPIO()
 {
     GPIO_init();
     GPIO_setConfig(Board_GPIO_LED0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+    GPIO_setConfig(Board_GPIO_LED1, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+    GPIO_setConfig(Board_DIR1, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+    GPIO_setConfig(Board_DIR2, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+
+
 }
 Board_initADC()
 {
@@ -147,6 +275,10 @@ Board_initADC()
 Board_initUART()
 {
     UART_init();
+}
+Board_initPWM()
+{
+    PWM_init();
 }
 /*
  *  ======== main ========
@@ -159,15 +291,16 @@ int main()
     Board_initGPIO();
     Board_initADC();
     Board_initUART();
+    Board_initPWM();
 
 
-    GPIO_write(Board_GPIO_LED0, Board_GPIO_LED_ON);
+    //
 
-    System_printf("Starting the example\nSystem provider is set to SysMin. "
-                      "Halt the target to view any SysMin contents in ROV.\n");
+//    System_printf("Starting the example\nSystem provider is set to SysMin. "
+//                      "Halt the target to view any SysMin contents in ROV.\n");
      /* SysMin will only print to the console when you call flush or exit */
 
-     System_flush();
+  //   System_flush();
 
      /* Start BIOS */
     BIOS_start();
