@@ -19,7 +19,7 @@ extern "C" {
 
 
 extern void timerAInit();
-extern void PORT1_IRQHandler();
+
 
 #ifdef __cplusplus
 }

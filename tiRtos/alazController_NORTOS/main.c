@@ -57,7 +57,8 @@
 #include "lcdDisplay.h"
 #include "uartComm.h"
 #include "pulseGen.h"
-
+#include "systick.h"
+#include "encoderAq.h"
 
 int main(void)
 {
@@ -67,13 +68,16 @@ int main(void)
     MAP_WDT_A_holdTimer();
 
     /* Configuring P1.0 as output */
-    MAP_GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0);
-    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN5);
-    MAP_GPIO_setAsOutputPin(GPIO_PORT_P3, GPIO_PIN0);
+//    MAP_GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0);
+//    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN5);
+//    MAP_GPIO_setAsOutputPin(GPIO_PORT_P3, GPIO_PIN0);
 
    // lcdInit();
   //  uartInit();
     timerAInit();
+    systickInit();
+    //initInteruptInput();
+
 //
 //    /* 123ABC */
 //    showChar('T', char1);
@@ -82,20 +86,21 @@ int main(void)
 //    showChar('N', char4);
 //    showChar('G', char5);
 //    showChar(' ', char6);
-
+    MAP_Interrupt_enableMaster();
     while(1)
     {
-        MAP_PCM_gotoLPM0();
+        //MAP_PCM_gotoLPM0();
+        // encoderValue[7];
     }
 
 
-    while (1)
-    {
-
-        //MAP_GPIO_toggleOutputOnPin(GPIO_PORT_P1, GPIO_PIN0);
-        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P2,GPIO_PIN5);
-        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P3,GPIO_PIN0);
-    }
+//    while (1)
+//    {
+//
+//        //MAP_GPIO_toggleOutputOnPin(GPIO_PORT_P1, GPIO_PIN0);
+//        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P2,GPIO_PIN5);
+//        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P3,GPIO_PIN0);
+//    }
 }
 
 

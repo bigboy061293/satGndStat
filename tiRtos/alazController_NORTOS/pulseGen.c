@@ -76,24 +76,10 @@ void timerAInit(void)
         /* Enabling interrupts and starting the watchdog timer */
         MAP_Interrupt_enableInterrupt(INT_PORT1);
         MAP_Interrupt_enableSleepOnIsrExit();
-        MAP_Interrupt_enableMaster();
+      //  MAP_Interrupt_enableMaster(); --------------> later on!!!!
 
 
 
 
 }
-void PORT1_IRQHandler(void)
-{
-    uint32_t status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P1);
-    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P1, status);
-//
-//    if (status & GPIO_PIN1)
-//    {
-//        if(pwmConfigCCR2A.dutyCycle == 28800)
-//            pwmConfigCCR2A.dutyCycle = 3200;
-//        else
-//            pwmConfigCCR2A.dutyCycle += 3200;
-//
-//        MAP_Timer_A_generatePWM(TIMER_A0_BASE, &pwmConfigCCR2A);
-//    }
-}
+
