@@ -18,6 +18,10 @@ extern "C" {
 
 extern void uartInit();
 extern void EUSCIA0_IRQHandler();
+extern void putChar(uint_fast8_t data);
+extern uint8_t getChar(void);
+extern void myPrintf(uint8_t* data);
+extern void printNumber(int32_t number);
 
 
 #ifdef __cplusplus
