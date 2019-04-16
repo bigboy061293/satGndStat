@@ -5,7 +5,7 @@
 #include <TimerOne.h>
 #include <TimerThree.h>
 
-
+extern int countForEncoder;
 
 extern void initRuntime();
 extern void threadOne();

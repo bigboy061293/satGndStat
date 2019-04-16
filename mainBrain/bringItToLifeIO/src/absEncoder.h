@@ -16,7 +16,7 @@ class absEncoder{
     // uint8_t dutyCyle;
     // uint8_t currentPos;
     // uint8_t currentVec;
-    int positionInDegrees;
+    uint16_t positionInDegrees;
     int positionInGray;
     uint8_t currentCode[8];
     uint8_t currentCode8bit = 0;

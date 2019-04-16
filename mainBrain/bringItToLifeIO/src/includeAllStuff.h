@@ -12,6 +12,7 @@
 #include "stepMotor.h"
 #include "absEncoder.h"
 #include "encoder.h"
+#include "easycommIII.h"
 
 
 #endif

@@ -15,20 +15,38 @@ class stepMotor{
     uint8_t dutyCyle;
     uint8_t currentPos;
     uint8_t currentVec;
+    uint16_t posInDregree;
+    uint8_t posControl;
 
     stepMotor(uint8_t pinPul, uint8_t pinDir){
       this->pinDir = pinDir;
       this->pinPul = pinPul;
+      posInDregree = 90;
+      posControl = 0;
     }
-
     void setDutyCycle(int dutyCyle){
       this->dutyCyle = dutyCyle;
       Timer1.pwm(pinPul, (dutyCyle*1023/100));
     }
-    void setDutyDir(uint8_t dir){
-      if (dir == CW) digitalWrite(this->pinDir, HIGH);
-        else digitalWrite(this->pinDir, LOW);
+    void setDir(uint8_t dir){
+      if (dir == CW) digitalWrite(this->pinDir, LOW);
+        else digitalWrite(this->pinDir, HIGH);
     }
+
+    void setSpeed(int speed, int dir){
+        this->setDir(dir);
+        Timer1.pwm(pinPul, speed);
+      }
+
+    void stop(){
+        //this->setDir(dir);
+        Timer1.pwm(pinPul, 0);
+    }
+    // void setPos(uint16_t posInDregree){
+    //
+    // }
+
+
 };
 
 #endif
