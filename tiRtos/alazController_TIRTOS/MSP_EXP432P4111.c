@@ -389,6 +389,13 @@ GPIO_PinConfig gpioPinConfigs[] = {
     GPIOMSP432_P4_3 | GPIO_DO_NOT_CONFIG, /* SPI chip select */
     GPIOMSP432_P4_1 | GPIO_DO_NOT_CONFIG, /* LCD power control */
     GPIOMSP432_P6_0 | GPIO_DO_NOT_CONFIG, /*LCD enable */
+
+
+    // I add new Shit from here!!!!!!
+    /* Stepper controller */
+
+    GPIOMSP432_P3_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_LOW | GPIO_CFG_OUT_LOW,
+    GPIOMSP432_P5_7 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_LOW | GPIO_CFG_OUT_LOW
 };
 
 /*

@@ -132,7 +132,13 @@ typedef enum MSP_EXP432P4111_GPIOName {
     MSP_EXP432P4111_LCD_POWER,
     MSP_EXP432P4111_LCD_ENABLE,
 
-    MSP_EXP432P4111_GPIOCOUNT
+    MSP_EXP432P4111_GPIOCOUNT,
+
+    // I add new Shit from here!!!!!!
+    /* Stepper controller */
+    MSP_EXP432P4111_DIR_1,
+    MSP_EXP432P4111_DIR_2
+
 } MSP_EXP432P4111_GPIOName;
 
 /*!

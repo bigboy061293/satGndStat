@@ -110,6 +110,14 @@ extern "C" {
 
 #define Board_WATCHDOG0             MSP_EXP432P4111_WATCHDOG
 
+
+
+// I add new Shit from here!!!!!!
+/* Stepper controller */
+
+#define Board_DIR1                MSP_EXP432P4111_DIR_1
+#define Board_DIR2                MSP_EXP432P4111_DIR_2
+
 #ifdef __cplusplus
 }
 #endif
