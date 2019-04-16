@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="7.4.0"/>
+	<deviceVariant value="MSP432P401R"/>
+	<deviceFamily value="MSP432"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="16.9.6.LTS"/>
+	<isElfFormat value="true"/>
+	<linkerCommandFile value="uart_pc_echo_12mhz_brclk_ccs.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<ignoreDefaultDeviceSettings value="true"/>
+	<templateProperties value="id=uart_pc_echo_12mhz_brclk.projectspec.uart_pc_echo_12mhz_brclk,"/>
+	<origin value="C:/Users/Big Boy/Downloads/Embedded_System_Design-a28dacbca4cfde03ed8245b0f0a49f6115445f74/Embedded_System_Design-a28dacbca4cfde03ed8245b0f0a49f6115445f74/Nene_lab_4/c_code_ARM"/>
+	<filesToOpen value="uart_pc_echo_12mhz_brclk.c,"/>
+</projectOptions>

@@ -26,15 +26,15 @@ Timer_A_PWMConfig pwmConfigCCR2A =
         TIMER_A_OUTPUTMODE_RESET_SET,
         dutyCyble
 };
-Timer_A_PWMConfig pwmConfigCCR3A =
-{
-        TIMER_A_CLOCKSOURCE_SMCLK,
-        TIMER_A_CLOCKSOURCE_DIVIDER_2,
-        periodNum,
-        TIMER_A_CAPTURECOMPARE_REGISTER_3,
-        TIMER_A_OUTPUTMODE_RESET_SET,
-        dutyCyble
-};
+//Timer_A_PWMConfig pwmConfigCCR3A =
+//{
+//        TIMER_A_CLOCKSOURCE_SMCLK,
+//        TIMER_A_CLOCKSOURCE_DIVIDER_2,
+//        periodNum,
+//        TIMER_A_CAPTURECOMPARE_REGISTER_3,
+//        TIMER_A_OUTPUTMODE_RESET_SET,
+//        dutyCyble
+//};
 
 void timerAInit(void)
 {

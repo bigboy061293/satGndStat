@@ -47,8 +47,52 @@ void EUSCIA0_IRQHandler(void)
 
     if(status & EUSCI_A_UART_RECEIVE_INTERRUPT_FLAG)
     {
-        MAP_UART_transmitData(EUSCI_A0_BASE, MAP_UART_receiveData(EUSCI_A0_BASE));
+       // MAP_UART_transmitData(EUSCI_A0_BASE, MAP_UART_receiveData(EUSCI_A0_BASE));
     }
 
+}
+
+
+void putChar(uint_fast8_t data)
+{
+    MAP_UART_transmitData(EUSCI_A0_BASE,data);
+    return;
+}
+
+uint8_t getChar(void)
+{
+    return MAP_UART_receiveData(EUSCI_A0_BASE);
+}
+
+void myPrintf(uint8_t* data)
+{
+    while(*data!='\0')
+    {
+        putchar(*data);
+        data++;
+    }
+    return;
+}
+
+void printNumber(int32_t number)
+{
+    uint8_t temp_ascii_store[10];
+    int8_t counter=0;
+    if(number<0)
+    {
+        putchar('-');
+        number*=-1;
+    }
+    do
+    {
+       temp_ascii_store[counter]='0'+number%10;
+       number/=10;
+       counter++;
+    }while(number>0);
+    for(counter-=1;counter>=0;counter--)
+    {
+       putchar(temp_ascii_store[counter]);
+    }
+    return;
 }
 

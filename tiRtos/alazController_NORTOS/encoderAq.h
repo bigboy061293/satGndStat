@@ -17,8 +17,8 @@ extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 
-extern void initInteruptInput();
-extern void PORT3_IRQHandler();
+extern void initEncoder();
+
 
 #ifdef __cplusplus
 }

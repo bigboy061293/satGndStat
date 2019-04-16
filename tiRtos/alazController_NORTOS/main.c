@@ -53,31 +53,40 @@
 /* Standard Includes */
 #include <stdint.h>
 #include <stdbool.h>
+#include <systickDefined.h>
 
 #include "lcdDisplay.h"
 #include "uartComm.h"
 #include "pulseGen.h"
-#include "systick.h"
 #include "encoderAq.h"
 
 int main(void)
 {
     volatile uint32_t ii;
-
-    /* Halting the Watchdog */
+    volatile uint32_t i;
+    /* Halting the Watchdog *///
     MAP_WDT_A_holdTimer();
 
     /* Configuring P1.0 as output */
-//    MAP_GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0);
+    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN0);
+    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN1);
+    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN2);
+
+    MAP_GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN0);
+        MAP_GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN1);
+        MAP_GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN2);
+
+
 //    MAP_GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN5);
 //    MAP_GPIO_setAsOutputPin(GPIO_PORT_P3, GPIO_PIN0);
 
    // lcdInit();
-  //  uartInit();
-    timerAInit();
-    systickInit();
-    //initInteruptInput();
 
+
+    systickInit();
+    timerAInit();
+    initEncoder();
+    uartInit();
 //
 //    /* 123ABC */
 //    showChar('T', char1);
@@ -86,11 +95,19 @@ int main(void)
 //    showChar('N', char4);
 //    showChar('G', char5);
 //    showChar(' ', char6);
+
+
+
     MAP_Interrupt_enableMaster();
     while(1)
     {
         //MAP_PCM_gotoLPM0();
         // encoderValue[7];
+//        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN0);
+//        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN1);
+//        MAP_GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN2);
+
+
     }
 
 

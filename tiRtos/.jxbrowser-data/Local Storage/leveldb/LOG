@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2019/03/19-08:54:31.947 2036 Reusing MANIFEST leveldb/MANIFEST-000001
 2019/03/19-08:54:31.953 2036 Recovering log #4
 2019/03/19-08:54:31.954 2036 Reusing old log leveldb/000004.log 
+=======
+2019/03/22-11:10:19.465 9756 Reusing MANIFEST leveldb/MANIFEST-000001
+2019/03/22-11:10:19.466 9756 Recovering log #4
+2019/03/22-11:10:19.500 9756 Reusing old log leveldb/000004.log 
+>>>>>>> 6ad35132269dc4434195e461307ebf29c1b1913a
