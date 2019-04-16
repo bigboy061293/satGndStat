@@ -16,5 +16,11 @@
 #define PIN_STATE_AZ 6
 
 #define WORING_PERIOD 1500 // 1.5Mhz <-> 1s: 1500000.
+#define PUL_PERIOD  600
+
+#define EASYCOMMBUFFERSIZE 256
+
+#define AZ_TOLERANCE 1
+#define EL_TOLERANCE 1
 
 #endif

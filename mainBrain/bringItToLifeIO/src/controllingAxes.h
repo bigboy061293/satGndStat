@@ -11,8 +11,8 @@ extern stepMotor motorAz;
 
 
 extern void initAxesControling();
+extern void updatePos();
 
 
-
-const uint8_t PUL_PERIOD = 540; //540 us
+ //540 us
 #endif

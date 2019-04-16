@@ -7,5 +7,5 @@ extern absEncoder encoderEl;
 extern absEncoder encoderAz;
 
 extern void encoderInit(void);
-
+extern void updateEncoder();
 #endif
