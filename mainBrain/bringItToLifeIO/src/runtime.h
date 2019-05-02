@@ -6,6 +6,7 @@
 #include <TimerThree.h>
 
 extern int countForEncoder;
+extern uint32_t countForEasyComm;
 
 extern void initRuntime();
 extern void threadOne();

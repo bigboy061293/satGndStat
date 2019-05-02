@@ -1,6 +1,7 @@
 #include "includeAllStuff.h"
 
 int countForEncoder = 0;
+uint32_t countForEasyComm = 0;
 
 void initRuntime(void){
   Timer3.initialize(WORING_PERIOD);
@@ -16,8 +17,14 @@ void initRuntime(void){
 
 
 void threadOne(void){
-  digitalWrite(13,1 - digitalRead(13));
+  digitalWrite(13,1 - digitalRead(13)); //-> blink to see op
   updateEncoder();
   updatePos();
+  if (countForEasyComm >= (10 ))
+  {
+      easycommProc();
+      countForEasyComm = 0;
+  }
+  else countForEasyComm++;
 
 }

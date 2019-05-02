@@ -16,10 +16,10 @@ class absEncoder{
     // uint8_t dutyCyle;
     // uint8_t currentPos;
     // uint8_t currentVec;
-    uint16_t positionInDegrees;
-    int positionInGray;
+    uint32_t positionInDegrees=0;
+    uint32_t positionInGray;
     uint8_t currentCode[8];
-    uint8_t currentCode8bit = 0;
+    uint32_t currentCode8bit = 0;
     uint8_t currentCodeGray = 0;
     uint8_t readyToUse = 0; // flag that ready to use
     absEncoder(uint8_t pinA, uint8_t pinB, uint8_t pinC, uint8_t pinState){

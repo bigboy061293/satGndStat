@@ -17,7 +17,7 @@ bool isNumber(char *input)
 }
 void easycommInit()
 {
-  Serial1.begin(115200);
+  Serial2.begin(115200);
 
 }
 
@@ -29,9 +29,9 @@ char *rawData;
 char data[100];
 String str1, str2, str3, str4, str5, str6;
 
-  while (Serial1.available() > 0)
+  while (Serial2.available() > 0)
   {
-    incommingByte = Serial1.read();
+    incommingByte = Serial2.read();
     if  ((incommingByte == '\n') || (incommingByte == '\r'))
     {
       buffer[bufferCnt] = 0;
@@ -44,8 +44,8 @@ String str1, str2, str3, str4, str5, str6;
           str2 = String(encoderAz.positionInDegrees,1);
           str3 = String(" EL");
           str4 = String(encoderEl.positionInDegrees,1);
-          str5 = String("\n");
-          Serial1.print(str1 + str2 + str3 + str4 + str5);
+          //str5 = String("\n");
+          Serial2.println(str1 + str2 + str3 + str4);
         }
         else
         {
@@ -71,6 +71,7 @@ String str1, str2, str3, str4, str5, str6;
         }
 
       }
+
       else if ((buffer[0] == 'E') && (buffer[1] == 'L'))
       {
         rawData = strtok_r(Data, " ", &Data);
@@ -92,14 +93,16 @@ String str1, str2, str3, str4, str5, str6;
           str2 = String(encoderAz.positionInDegrees,1);
           str3 = String(" EL");
           str4 = String(encoderEl.positionInDegrees,1);
-          str5 = String("\n");
-          Serial1.print(str1 + str2 + str3 + str4 + str5);
+          //str5 = String("\n");
+          Serial2.println(str1 + str2 + str3 + str4);
 
           motorAz.posControl == 0;
           motorEl.posControl == 0;
         }
 
         bufferCnt = 0;
+
+
     }
 
 
@@ -107,6 +110,22 @@ String str1, str2, str3, str4, str5, str6;
     {
       buffer[bufferCnt] = incommingByte;
       bufferCnt++;
+
+      str1 = String("AZ");
+      str2 = String(encoderAz.positionInDegrees,10);
+      str3 = String(" EL");
+      str4 = String(encoderEl.positionInDegrees,10);
+    //  str5 = String("\n");
+      Serial2.println(str1 + str2 + str3 + str4);
     }
+
   }
+
+//   str1 = String("AZ");
+//   str2 = String(encoderAz.positionInDegrees,10);
+//   str3 = String(" EL");
+//   str4 = String(encoderEl.positionInDegrees,10);
+// //  str5 = String("\n");
+//   Serial2.println(str1 + str2 + str3 + str4);
+//  Serial2.println(encoderAz.positionInDegrees);
 }
