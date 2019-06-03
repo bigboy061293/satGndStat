@@ -5,7 +5,6 @@
 #include <TimerOne.h>
 #include <TimerThree.h>
 
-
 #include "runtime.h"
 #include "controllingAxes.h"
 #include "pinStateConstants.h"
@@ -13,6 +12,6 @@
 #include "absEncoder.h"
 #include "encoder.h"
 #include "easycommIII.h"
-
+#include "indication.h"
 
 #endif

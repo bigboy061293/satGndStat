@@ -17,12 +17,20 @@ class stepMotor{
     uint8_t currentVec;
     uint16_t posInDregree;
     uint8_t posControl;
-
+    unsigned long currentPulse;
+    unsigned long desiredPulse;
+    unsigned long differentialPulse;
+    uint8_t isControlled = 0;
+    uint8_t homingDone = 0;
     stepMotor(uint8_t pinPul, uint8_t pinDir){
       this->pinDir = pinDir;
       this->pinPul = pinPul;
       posInDregree = 90;
       posControl = 0;
+
+      currentPulse = 0;
+      desiredPulse = 0;
+      differentialPulse = 0;
     }
     void setDutyCycle(int dutyCyle){
       this->dutyCyle = dutyCyle;
