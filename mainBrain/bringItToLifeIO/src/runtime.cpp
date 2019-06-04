@@ -23,6 +23,7 @@ void interruptTimerOne(void)
 
   // motorAz.currentPulse++;
   // motorEl.currentPulse++;
+
   if (motorEl.isControlled)
   {
     if (motorEl.desiredPulse > motorEl.currentPulse) motorEl.currentPulse++;
@@ -34,6 +35,9 @@ void interruptTimerOne(void)
     if (motorAz.desiredPulse > motorAz.currentPulse) motorAz.currentPulse++;
     if (motorAz.desiredPulse < (motorAz.currentPulse)) motorAz.currentPulse--;
   }
+
+    motorEl.currentAngle = motorEl.currentPulse / 444.444;
+    motorAz.currentAngle = motorAz.currentPulse / 2222.222;
 }
 
 void threadOne(void){
@@ -42,13 +46,13 @@ void threadOne(void){
   updateEncoder();
   banbangController();
   //updatePos(); -> uncommented af ter attaching the encoder
-  if (countForEasyComm >= (10 ))
+  //if (countForEasyComm >= 20 )
   {
-      //easycommProc(); -> uncommented af after testing the motor
-      countForEasyComm = 0;
+      easycommProc();// -> uncommented af after testing the motor
+      //countForEasyComm = 0;
 
   }
-    else countForEasyComm++;
+//    else countForEasyComm++;
 
 
   if (countForLed8 >= 100)
@@ -58,13 +62,13 @@ void threadOne(void){
 //    extractNumAndUpDateLed7(led7Byte);
   }
   else countForLed8++;
-
-  if (countForLed7 >= 10)
-  {
-    countForLed7 = 0;
-    //updateLed8(led8Byte);
-    extractNumAndUpDateLed7(led7Num);
-  }
-  else countForLed7++;
+  //
+  // if (countForLed7 >= 10)
+  // {
+  //   countForLed7 = 0;
+  //   //updateLed8(led8Byte);
+  //   extractNumAndUpDateLed7(led7Num);
+  // }
+  // else countForLed7++;
 
 }

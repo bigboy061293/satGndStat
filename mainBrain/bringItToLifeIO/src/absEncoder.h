@@ -4,7 +4,6 @@
 #include "pinStateConstants.h"
 
 class absEncoder;
-
 class absEncoder{
   private:
 

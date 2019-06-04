@@ -1,6 +1,6 @@
 #include "includeAllStuff.h"
 #include "pinStateConstants.h"
-uint8_t MODE = MODE_RUN_1;
+uint8_t MODE = 6;
 unsigned long tempElDesired = 0;
 unsigned long tempAzDesired = 0;
 
@@ -27,7 +27,7 @@ void setup() {
   initAxesControling();
   easycommInit();
 
-  Serial.begin(9600);
+  Serial.begin(4800);
   delay(1000);
 
   //HOMING_DONE = 0;
@@ -45,13 +45,14 @@ void loop() {
 // }
 while(1)
 {
+    
   if (BUT_1_PUSHED)
   {
-    if (MODE > 4) MODE = 0;
+    if (MODE > 8) MODE = 0;
     else MODE++;
   }
   led8Byte = MODE;
-  delay(200);
+  delay(100);
   if  (BUT_2_PUSHED) break;
 }
 
@@ -67,11 +68,11 @@ switch (MODE)
     motorEl.currentPulse = 0;
     while(1)
     {
-    if (tempElDesired > 255) tempElDesired = 1;
+    if (tempElDesired > MAX_RANGE_180_8_BIT) tempElDesired = 1; // 255 is full 360 degree -> 120 is around 180 degree
     if (BUT_1_PUSHED)
     {
       tempElDesired++;
-      if (tempElDesired > 255) tempElDesired = 255;
+      if (tempElDesired > MAX_RANGE_180_8_BIT) tempElDesired = MAX_RANGE_180_8_BIT; // 255 is full 360 degree -> 120 is around 180
     }
 
     if (BUT_2_PUSHED)
@@ -83,9 +84,9 @@ switch (MODE)
     led8Byte = tempElDesired;
     motorEl.desiredPulse = tempElDesired * 3125;
     delay(100);
-    Serial.print(motorEl.desiredPulse);
-    Serial.print("    ");
-    Serial.println(motorEl.currentPulse);
+    // Serial.print(motorEl.desiredPulse);
+    // Serial.print("    ");
+    // Serial.println(motorEl.currentPulse);
     //break;
 
     }
@@ -100,11 +101,11 @@ switch (MODE)
     motorAz.currentPulse = 0;
     while(1)
     {
-    if (tempAzDesired > 255) tempAzDesired = 1;
+    if (tempAzDesired > MAX_RANGE_180_8_BIT) tempAzDesired = 1; // 255 is full 360 degree -> 120 is around 180
     if (BUT_1_PUSHED)
     {
       tempAzDesired++;
-      if (tempAzDesired > 255) tempAzDesired = 255;
+      if (tempAzDesired > MAX_RANGE_180_8_BIT) tempAzDesired = MAX_RANGE_180_8_BIT; // 255 is full 360 degree -> 120 is around 180
     }
 
     if (BUT_2_PUSHED)
@@ -116,19 +117,68 @@ switch (MODE)
     led8Byte = tempAzDesired;
     motorAz.desiredPulse = tempAzDesired * 625;
     delay(100);
-    Serial.print(motorAz.desiredPulse);
-    Serial.print("    ");
-    Serial.println(motorAz.currentPulse);
+    // Serial.print(motorAz.desiredPulse);
+    // Serial.print("    ");
+    // Serial.println(motorAz.currentPulse);
     //break;
 
     }
   }
 
 
+  case MODE_HOMING_EL_MANUALLY:
+  {
+    while(1)
+    {
+    while (motorEl.homingDone == 0)
+    {
+      if (motorEl.homingDone == 0) motorEl.setSpeed(1023, CW_E);
+      if (EL_END == 0)
+        {
+          motorEl.homingDone = 1;
+          motorEl.stop();
+          motorEl.currentPulse = 0;
+        }
+    }
+    }
+  }
+
+  case MODE_HOMING_AZ_MANUALLY:
+  {
+    while(1)
+    {
+    while (motorAz.homingDone == 0)
+    {
+      if (motorAz.homingDone == 0) motorAz.setSpeed(1023, CW);
+      if (AZ_END == 0)
+        {
+          motorAz.homingDone = 1;
+          motorAz.stop();
+          motorAz.currentPulse = 0;
+        }
+    }
+    }
+  }
 
 
+  case MODE_GPREDICT:
+  {
+    // after homing
+    motorAz.homingDone = 1;
+    motorEl.homingDone = 1;
+    while(1)
+    {
+      if ((motorAz.homingDone == 1) && (motorEl.homingDone == 1))
+      {
+        motorEl.desiredPulse = motorEl.desiredAngle * 2222.2222;
+        motorAz.desiredPulse = motorAz.desiredAngle * 444.444;
+      }
 
-
+      Serial.print( motorEl.desiredAngle);
+      Serial.print("  ");
+      Serial.println( motorAz.desiredAngle);
+    }
+  }
 
   case 100: // used to be MODE_RUN_1
   {

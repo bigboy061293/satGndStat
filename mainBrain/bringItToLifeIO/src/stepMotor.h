@@ -22,6 +22,8 @@ class stepMotor{
     unsigned long differentialPulse;
     uint8_t isControlled = 0;
     uint8_t homingDone = 0;
+    float desiredAngle = 0.0;
+    float currentAngle = 0.0;
     stepMotor(uint8_t pinPul, uint8_t pinDir){
       this->pinDir = pinDir;
       this->pinPul = pinPul;

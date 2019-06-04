@@ -53,7 +53,8 @@
 #define PIN_STATE_EL 5
 #define PIN_STATE_AZ 6
 
-#define WORING_PERIOD 150 // 1.5Mhz <-> 1s: 1500000.
+//#define WORING_PERIOD 150 // 1.5Mhz <-> 1s: 1500000.
+#define WORING_PERIOD 3000 // 1.5Mhz <-> 1s: 1500000.
 #define WORING_PERIOD_EASYCOMM WORING_PERIOD*10
 #define PUL_PERIOD  600
 #define PUL_PERIOD_5_PHASE  200
@@ -81,9 +82,14 @@
 #define MODE_TEST_2 1
 #define MODE_RUN_1 2
 #define MODE_RUN_2 3
-#define MODE_4 4
 
+#define MODE_HOMING_EL_MANUALLY 4
+#define MODE_HOMING_AZ_MANUALLY 5
 
+#define MODE_GPREDICT 6
+
+#define MAX_RANGE_360_8_BIT 255
+#define MAX_RANGE_180_8_BIT 127
 
 
 #endif
