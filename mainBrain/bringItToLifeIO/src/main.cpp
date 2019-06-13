@@ -21,18 +21,16 @@ void setup() {
   pinMode(ENDSTOP_PIN_EL,INPUT);
   //digitalWrite(ENDSTOP_PIN_AZ,HIGH);
   //digitalWrite(ENDSTOP_PIN_EL,HIGH);
-
   initRuntime();
   initIndication();
   initAxesControling();
   easycommInit();
 
-  Serial.begin(4800);
+  Serial.begin(BAUDRATE_SERIAL_1);
   delay(1000);
 
   //HOMING_DONE = 0;
     //motorEl.setSpeed(1023,CCW);
-
 }
 
 void loop() {
@@ -45,7 +43,7 @@ void loop() {
 // }
 while(1)
 {
-    
+    //easycommProc();
   if (BUT_1_PUSHED)
   {
     if (MODE > 8) MODE = 0;
@@ -61,7 +59,7 @@ while(1)
 switch (MODE)
 {
 
-  case MODE_TEST_1:
+  case MODE_TEST_1: // 0 / xoay E
   {
     motorEl.homingDone = 1;
     motorEl.isControlled = 1;
@@ -94,7 +92,7 @@ switch (MODE)
 
 
 
-  case MODE_TEST_2:
+  case MODE_TEST_2: //1 // Xoay A
   {
     motorAz.homingDone = 1;
     motorAz.isControlled = 1;
@@ -126,7 +124,7 @@ switch (MODE)
   }
 
 
-  case MODE_HOMING_EL_MANUALLY:
+  case MODE_HOMING_EL_MANUALLY: // 4
   {
     while(1)
     {
@@ -143,7 +141,7 @@ switch (MODE)
     }
   }
 
-  case MODE_HOMING_AZ_MANUALLY:
+  case MODE_HOMING_AZ_MANUALLY: // 5
   {
     while(1)
     {
@@ -166,21 +164,71 @@ switch (MODE)
     // after homing
     motorAz.homingDone = 1;
     motorEl.homingDone = 1;
+
+    motorAz.currentPulse = 0;
+    motorEl.currentPulse = 0;
+
+    motorAz.currentAngle = 0.0;
+    motorEl.currentAngle = 0.0;
+
+    motorAz.isControlled = 1;
+    motorEl.isControlled = 1;
     while(1)
     {
-      if ((motorAz.homingDone == 1) && (motorEl.homingDone == 1))
+      // if ((EL_END) || (AZ_END))
+      // {
+      //   while(1)
+      //   {
+      //     motorAz.stop();
+      //     motorEl.stop();
+      //   }
+      // }
+      easycommProc();
+      if (easyCommIIIValid)
       {
-        motorEl.desiredPulse = motorEl.desiredAngle * 2222.2222;
-        motorAz.desiredPulse = motorAz.desiredAngle * 444.444;
-      }
+        if ((motorAz.homingDone == 1) && (motorEl.homingDone == 1))
+        {
+          //if (motorEl.desiredAngle > 150.0) motorEl.desiredAngle = 150.0;
+          //if (motorAz.desiredAngle > 270.0) motorAz.desiredAngle = 270.0;
 
-      Serial.print( motorEl.desiredAngle);
-      Serial.print("  ");
-      Serial.println( motorAz.desiredAngle);
+          motorEl.desiredPulse = motorEl.desiredAngle * 2222.222222;
+          motorAz.desiredPulse = motorAz.desiredAngle * 444.444444;
+
+          motorEl.currentAngle = motorEl.currentPulse / 2222.222222;
+          motorAz.currentAngle = motorAz.currentPulse / 444.444444;
+        }
+      // //
+        Serial.println("-------------    Angle    ---------------");
+        Serial.print("AZ desiredAngle: ");
+        Serial.print( motorAz.desiredAngle);
+        Serial.print("  ");
+        Serial.print("EL desiredAngle: ");
+        Serial.println( motorEl.desiredAngle);
+
+        Serial.print("AZ currentAngle: ");
+        Serial.print( motorAz.currentAngle);
+        Serial.print("  ");
+        Serial.print("EL currentAngle: ");
+        Serial.println( motorEl.currentAngle);
+
+        Serial.println("-------------    Pulse    ---------------");
+        Serial.print("AZ desiredPulse: ");
+        Serial.print( motorAz.desiredPulse);
+        Serial.print("  ");
+        Serial.print("EL desiredPulse: ");
+        Serial.println( motorEl.desiredPulse);
+
+        Serial.print("AZ currentPulse: ");
+        Serial.print( motorAz.currentPulse);
+        Serial.print("  ");
+        Serial.print("EL currentPulse: ");
+        Serial.println( motorEl.currentPulse);
+        Serial.println("----------------------");
+      }
     }
   }
 
-  case 100: // used to be MODE_RUN_1
+  case MODE_HOMING_EL_MANUALLY_BOTH_AUTO: // 2
   {
     // if (motorEl.currentPulse < 100000) motorEl.setSpeed(1023, CW_E);
     // else motorEl.stop();

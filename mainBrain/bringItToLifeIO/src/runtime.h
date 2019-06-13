@@ -9,8 +9,8 @@ extern int countForEncoder;
 extern uint32_t countForEasyComm;
 extern unsigned int countForLed7;
 extern uint8_t countForLed8;
+extern unsigned long countForEasyCommValid;
 //extern uint8_t HOMING_DONE;
-
 
 extern void initRuntime();
 extern void threadOne();

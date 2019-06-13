@@ -17,8 +17,10 @@ class stepMotor{
     uint8_t currentVec;
     uint16_t posInDregree;
     uint8_t posControl;
-    unsigned long currentPulse;
-    unsigned long desiredPulse;
+
+    long currentPulse;
+    long desiredPulse;
+
     unsigned long differentialPulse;
     uint8_t isControlled = 0;
     uint8_t homingDone = 0;

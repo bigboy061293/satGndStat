@@ -53,8 +53,13 @@
 #define PIN_STATE_EL 5
 #define PIN_STATE_AZ 6
 
+#define BAUDRATE_SERIAL_1 9600
+#define BAUDRATE_SERIAL_2 19200
+
+#define TIME_OUT_EASYCOMM 2000
+
 //#define WORING_PERIOD 150 // 1.5Mhz <-> 1s: 1500000.
-#define WORING_PERIOD 3000 // 1.5Mhz <-> 1s: 1500000.
+#define WORING_PERIOD 1500 // 1.5Mhz <-> 1s: 1500000.
 #define WORING_PERIOD_EASYCOMM WORING_PERIOD*10
 #define PUL_PERIOD  600
 #define PUL_PERIOD_5_PHASE  200
@@ -80,7 +85,7 @@
 
 #define MODE_TEST_1 0
 #define MODE_TEST_2 1
-#define MODE_RUN_1 2
+#define MODE_HOMING_EL_MANUALLY_BOTH_AUTO 2
 #define MODE_RUN_2 3
 
 #define MODE_HOMING_EL_MANUALLY 4
@@ -91,5 +96,10 @@
 #define MAX_RANGE_360_8_BIT 255
 #define MAX_RANGE_180_8_BIT 127
 
+#define MAX_RANGE_AZ 300.0
+#define MAX_RANGE_EL 170.0
+
+#define MIN_RANGE_AZ 0.0
+#define MIN_RANGE_EL 5.0
 
 #endif

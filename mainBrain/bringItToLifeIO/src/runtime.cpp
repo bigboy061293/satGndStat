@@ -4,6 +4,7 @@ int countForEncoder = 0;
 uint32_t countForEasyComm = 0;
 unsigned int countForLed7 = 0;
 uint8_t countForLed8 = 0;
+unsigned long countForEasyCommValid = 0;
 //uint8_t HOMING_DONE = 0;
 void initRuntime(void){
   Timer3.initialize(WORING_PERIOD);
@@ -27,17 +28,16 @@ void interruptTimerOne(void)
   if (motorEl.isControlled)
   {
     if (motorEl.desiredPulse > motorEl.currentPulse) motorEl.currentPulse++;
-    if (motorEl.desiredPulse < (motorEl.currentPulse)) motorEl.currentPulse--;
+    if (motorEl.desiredPulse < motorEl.currentPulse) motorEl.currentPulse--;
   }
 
   if (motorAz.isControlled)
   {
     if (motorAz.desiredPulse > motorAz.currentPulse) motorAz.currentPulse++;
-    if (motorAz.desiredPulse < (motorAz.currentPulse)) motorAz.currentPulse--;
+    if (motorAz.desiredPulse < motorAz.currentPulse) motorAz.currentPulse--;
   }
 
-    motorEl.currentAngle = motorEl.currentPulse / 444.444;
-    motorAz.currentAngle = motorAz.currentPulse / 2222.222;
+    
 }
 
 void threadOne(void){
@@ -46,13 +46,28 @@ void threadOne(void){
   updateEncoder();
   banbangController();
   //updatePos(); -> uncommented af ter attaching the encoder
-  //if (countForEasyComm >= 20 )
-  {
-      easycommProc();// -> uncommented af after testing the motor
-      //countForEasyComm = 0;
+  // if (Serial2.available())
+  // {
+  //
+  //     //countForEasyComm = 0;
+  // }
+  //
+  // if (countForEasyComm >= TIME_OUT_EASYCOMM )
+  // {
+  //     //easycommProc();// -> uncommented af after testing the motor
+  //      countForEasyComm = 0;
+  //
+  //
+  //
+  // }
+  //   else countForEasyComm++;
 
+  if (countForEasyCommValid > 10000)
+  {
+    easyCommIIIValid = false;
+    countForEasyCommValid = 10000;
   }
-//    else countForEasyComm++;
+  else countForEasyCommValid++;
 
 
   if (countForLed8 >= 100)
