@@ -1,0 +1,4 @@
+Object reference not set to an instance of an object.
+at SDRSharp.exe.MainForm.InitializeGUI  (IL offset: 0x9a2)
+at SDRSharp.exe.MainForm..ctor  (IL offset: 0x13e)
+at SDRSharp.exe.Program.Main  (IL offset: 0x69)
