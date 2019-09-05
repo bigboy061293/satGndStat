@@ -159,7 +159,7 @@ switch (MODE)
   }
 
 
-  case MODE_GPREDICT:
+  case MODE_GPREDICT: // 6
   {
     // after homing
     motorAz.homingDone = 1;
@@ -269,6 +269,25 @@ switch (MODE)
 
     break;
   };
+
+  case MODE_PC_EL:  //  7  Mode verify angle by Smartphone via serial1 //
+  {
+    if (motorEl.homingDone == 1)
+    {
+      while(1)
+      {
+        Serial.setTimeout(1000); // 1000 ms
+        //waiting for input
+        while (Serial.available() == 0);
+        float val = Serial.parseFloat(); //read int or parseFloat for ..float...
+        Serial.println(val);
+        motorAz.desiredPulse = val*4444.444;
+      }
+    }
+    break;
+  };
+
+
   default:
   {
 
