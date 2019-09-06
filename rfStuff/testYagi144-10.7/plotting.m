@@ -3,7 +3,7 @@
 %close all
 
 yagiS11 = sparameters('yagi144Mhz.s1p');
-yagiS11.Frequencies = yagiS11.Frequencies/10e8
+yagiS11.Frequencies = yagiS11.Frequencies
 figure
 smithplot(yagiS11)
 figure
