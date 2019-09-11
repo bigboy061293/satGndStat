@@ -1,6 +1,6 @@
 #include "includeAllStuff.h"
 #include "pinStateConstants.h"
-uint8_t MODE = 7; // default mode
+uint8_t MODE = 0; // default mode
 unsigned long tempElDesired = 0;
 unsigned long tempAzDesired = 0;
 
@@ -41,6 +41,17 @@ void loop() {
 // {
 //   motorEl.setSpeed(1023, CCW);
 // }
+
+// un comment later.....................
+// un comment later.....................
+// un comment later.....................
+// un comment later.....................
+// un comment later.....................
+// un comment later.....................
+// un comment later.....................
+
+
+
 while(1)
 {
     //easycommProc();
@@ -119,7 +130,6 @@ switch (MODE)
     // Serial.print("    ");
     // Serial.println(motorAz.currentPulse);
     //break;
-
     }
   }
 
@@ -269,7 +279,7 @@ switch (MODE)
 
     break;
   };
-
+  // un commented MODE chosen
   case MODE_PC_EL:  //  7  Mode verify angle by Smartphone via serial1 //
   {
     //if (motorEl.homingDone == 1)
@@ -297,7 +307,8 @@ switch (MODE)
 
   case MODE_PC_AZ:  //  8  Mode verify angle by Smartphone via serial1 //
   {
-    if (motorAz.homingDone == 1)
+    //if (motorAz.homingDone == 1)
+    motorAz.isControlled = 1;
     {
       while(1)
       {
@@ -312,6 +323,31 @@ switch (MODE)
     }
     break;
   };
+
+  case MODE_PC_DEBUG: // 9;
+  {
+    motorEl.isControlled = 1;
+    motorAz.isControlled = 1;
+
+    while(1)
+    {
+
+      Serial.print("el,");
+      Serial.print(motorEl.currentPulse/4444.44);
+      Serial.print(",");
+      Serial.print("az,");
+      Serial.print(motorAz.currentPulse/888.89);
+      Serial.print(",");
+      Serial.print(EL_END);
+      Serial.print(",");
+      Serial.print(AZ_END);
+      Serial.print(",");
+      Serial.println(MODE);
+      delay(10);
+    }
+    break;
+
+  }
 
   default:
   {
